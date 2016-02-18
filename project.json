@@ -19,7 +19,6 @@
 		"src/third-party/enum/enum-2.3.0.min.js" ,
 		"src/generic/namespace.js" ,
 		"src/generic/utilities.js" ,
-		"src/generic/dictionary.js" ,
 		"src/ProjectDefinition.js" ,
         "res/resource.js" ,
 		"src/component/TouchSensor.js" ,
