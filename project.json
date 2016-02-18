@@ -1,0 +1,33 @@
+{
+    "project_type"	: "javascript" ,
+
+    "debugMode"		: 1 ,
+    "showFPS"		: true ,
+    "frameRate"		: 60 ,
+    "id"			: "gameCanvas" ,
+    "renderMode"	: 0 ,
+    "engineDir"		: "frameworks/cocos2d-html5" ,
+
+    "modules" :
+	[
+		"cocos2d"
+	] ,
+
+    "jsList" :
+	[
+		"src/third-party/chai/chai.js" ,
+		"src/third-party/enum/enum-2.3.0.min.js" ,
+		"src/generic/namespace.js" ,
+		"src/generic/utilities.js" ,
+		"src/generic/dictionary.js" ,
+		"src/ProjectDefinition.js" ,
+        "res/resource.js" ,
+		"src/component/TouchSensor.js" ,
+		"src/component/PolymorphousNode.js" ,
+		"src/component/GridPage.js" ,
+		"src/component/JewelLayer.js" ,
+		"src/component/InterfaceLayer.js" ,
+		"src/component/GameOverLayer.js" ,
+        "src/app.js"
+    ]
+}
