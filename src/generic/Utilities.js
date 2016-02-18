@@ -58,6 +58,41 @@ util.shuffle = function( source )
 	return source ;
 } ;
 
+util.CircularQueue = cc.Class.extend(
+{
+	_size	: null ,
+	_front	: null ,
+	_rear	: null ,
+	
+	ctor : function( size )
+	{
+	} ,
+	
+	reset : function( )
+	{
+	} ,
+	
+	free : function( )
+	{
+	} ,
+	
+	isFull : function( )
+	{
+	} ,
+	
+	isEmpty : function( )
+	{
+	} ,
+	
+	enqueue : function( )
+	{
+	} ,
+	
+	dequeue : function( )
+	{
+	}
+} ) ;
+
 /**
  * @class
  * @extends	cc.Class

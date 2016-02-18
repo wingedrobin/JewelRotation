@@ -1,5 +1,9 @@
 "use strict" ;
 
+/**
+ * @namespace
+ * @name		gxd
+ */
 var gxd		= gxd		|| { } ;
 gxd.def 	= gxd.def	|| { } ;
 gxd.dev 	= gxd.dev	|| { } ;
