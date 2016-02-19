@@ -1,8 +1,8 @@
 "use strict" ;
 
 var assert	= chai.assert ;
-var util	= gxd.util || { } ;
-var comp	= gxd.comp || { } ;
+var util	= gxd.util	|| { } ;
+var comp	= gxd.comp	|| { } ;
 
 comp.PolymorphousNode = cc.Node.extend(
 {
@@ -93,7 +93,7 @@ comp.Button = comp.PolymorphousNode.extend(
 			swallow		= target ;
 			target		= callback ;
 			callback	= disable ;
-			disable		= null ;
+			disable		= undefined ;
 		}
 		/**/
 		
@@ -375,7 +375,6 @@ comp.Button = comp.PolymorphousNode.extend(
 			
 			if( disableSprite )
 				disableSprite.setVisible( true ) ;
-			
 		}
 		
 		this._currentStage	= stage ;

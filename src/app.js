@@ -3,12 +3,7 @@
 var comp = gxd.comp || { } ;
 var proj = gxd.proj || { } ;
 
-var color =
-[
-	"red" , "orange" , "yellow" , "green" , "blue" , "indigo" , "purple"
-] ;
-
-var MainGameScene = cc.Scene.extend(
+proj.MainGameScene = cc.Scene.extend(
 {
 	_backgroundLayer	: null ,
 	_mainLayer			: null ,
@@ -121,17 +116,14 @@ var MainGameScene = cc.Scene.extend(
 			flipped			= util.randomBoolean( ) ;
 			normalSprite	= new cc.Sprite( cc.spriteFrameCache.getSpriteFrame( "rotate_normal.png" ) ) ;
 			selectedSprite	= new cc.Sprite( cc.spriteFrameCache.getSpriteFrame( "rotate_selected.png" ) ) ;
-			disableSprite	= new cc.Sprite( cc.spriteFrameCache.getSpriteFrame( "rotate_disable.png" ) ) ;
 			
 			normalSprite.setFlippedX( flipped ) ;
 			selectedSprite.setFlippedX( flipped ) ;
-			disableSprite.setFlippedX( flipped ) ;
 			
 			callback = flipped ? this.roteteJewelCounterClockwise : this.rotateJewelClockwise ;
 			
 			button = new comp.Button( normalSprite ,
 									  selectedSprite ,
-									  disableSprite ,
 									  callback.bind( this , i ) ,
 									  this ) ;
 			

@@ -67,7 +67,7 @@ cc.game.onStart = function( )
     //load resources
     cc.LoaderScene.preload( proj.Resources.JewelRotation.getValues( ) , function( )
 	{
-        cc.director.runScene( new MainGameScene( ) ) ;
+        cc.director.runScene( new proj.MainGameScene( ) ) ;
     } , this ) ;
 } ;
 
