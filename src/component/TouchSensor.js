@@ -157,7 +157,7 @@ comp.TouchSensor = cc.Class.extend(
 	{
 		// assert.isTrue( util.isNull( this._delegate ) ,
 					   // "Delegate of touch sensor can only set once." ) ;
-		assert.isNotNull( this._delegate ) ;
+		assert.isNull( this._delegate ) ;
 		assert.instanceOf( delegate , cc.Node ) ;
 		
 		this._delegate = delegate ;
