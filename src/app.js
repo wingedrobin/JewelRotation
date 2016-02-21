@@ -44,7 +44,7 @@ proj.MainGameScene = cc.Scene.extend(
 		this._backgroundLayer.addChild( background ) ;
 		this.addChild( this._backgroundLayer ) ;
 		
-		this._mainLayer = new comp.JewelLayer( jewelLayerConfig.width ,
+		this._mainLayer = new proj.JewelLayer( jewelLayerConfig.width ,
 											   jewelLayerConfig.height ,
 											   jewelLayerConfig.rows ,
 											   jewelLayerConfig.columns ) ;
@@ -219,7 +219,7 @@ proj.MainGameScene = cc.Scene.extend(
 			this.addChild( this._gameOverLayer , 10 ) ;
 		else
 		{
-			this._gameOverLayer = new comp.GameOverLayer( cc.color( 255 , 237 , 151 , 150 ) ,
+			this._gameOverLayer = new proj.GameOverLayer( cc.color( 255 , 237 , 151 , 150 ) ,
 														  cc.director.getWinSize( ).width ,
 														  cc.director.getWinSize( ).height ) ;
 			

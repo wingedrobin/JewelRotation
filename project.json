@@ -21,11 +21,12 @@
 		"src/generic/Utilities.js" ,
 		"src/ProjectDefinition.js" ,
         "res/resource.js" ,
-		"src/component/TouchSensor.js" ,
+		"src/component/ControlSignalReceiver.js" ,
 		"src/component/PolymorphousNode.js" ,
 		"src/component/GridPage.js" ,
 		"src/component/JewelLayer.js" ,
 		"src/component/InterfaceLayer.js" ,
+		"src/component/TouchBlockedLayer.js" ,
 		"src/component/GameOverLayer.js" ,
         "src/app.js"
     ]

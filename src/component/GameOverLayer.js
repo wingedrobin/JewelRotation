@@ -1,8 +1,9 @@
 "use strict" ;
 
 var comp = gxd.comp || { } ;
+var proj = gxd.proj || { } ;
 
-comp.GameOverLayer = cc.LayerColor.extend(
+proj.GameOverLayer = comp.TouchBlockedLayer.extend(
 {
 	_messageLabel	: null ,
 	_menu			: null ,
@@ -92,13 +93,13 @@ comp.GameOverLayer = cc.LayerColor.extend(
 	}
 } ) ;
 
-Object.defineProperty( comp.GameOverLayer , "completeMessage" ,
+Object.defineProperty( proj.GameOverLayer , "completeMessage" ,
 {
 	value		: "You Win!" ,
 	enumerable	: true
 } ) ;
 
-Object.defineProperty( comp.GameOverLayer , "FailedMessage" ,
+Object.defineProperty( proj.GameOverLayer , "FailedMessage" ,
 {
 	value		: "Game Over" ,
 	enumerable	: true

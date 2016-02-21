@@ -99,7 +99,7 @@ comp.Button = comp.PolymorphousNode.extend(
 		
 		swallow				= util.isNull( swallow ) ? comp.Button.DEFAULT_SWALLOW : swallow ;
 		// this._touchSensor	= new comp.TouchSensor( true , this ) ;
-		this._touchSensor	= new comp.TouchSensor( swallow , this ) ;
+		this._touchSensor	= new comp.TouchSensor( this , swallow ) ;
 		
 		this.setTriggerType( comp.Button.TRIGGER_TYPE.PRESSED ) ;
 		

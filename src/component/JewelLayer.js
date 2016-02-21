@@ -2,8 +2,9 @@
 
 var assert	= chai.assert ;
 var comp	= gxd.comp || { } ;
+var proj	= gxd.proj || { } ;
 
-comp.JewelLayer = comp.GridPage.extend(
+proj.JewelLayer = comp.GridPage.extend(
 {
 	_columnColors		: null ,
 	_completeColumns	: null ,
@@ -51,23 +52,23 @@ comp.JewelLayer = comp.GridPage.extend(
 		var tempPosition	= this._gridNodes[ row ][ column ].getPosition( ) ;
 		
 		tempNode = this._gridNodes[ row + 1 ][ column ] ;
-		this._gridNodes[ row ][ column ].runAction( cc.moveTo( comp.JewelLayer.ROTATE_DURATION , tempNode.getPosition( ) ) ) ;
+		this._gridNodes[ row ][ column ].runAction( cc.moveTo( proj.JewelLayer.ROTATE_DURATION , tempNode.getPosition( ) ) ) ;
 		this._gridNodes[ row + 1 ][ column ] = this._gridNodes[ row ][ column ] ;
 		this._gridNodes[ row ][ column ] = tempNode ;
 		
 		tempNode = this._gridNodes[ row + 1 ][ column + 1 ] ;
-		this._gridNodes[ row ][ column ].runAction( cc.moveTo( comp.JewelLayer.ROTATE_DURATION , tempNode.getPosition( ) ) ) ;
+		this._gridNodes[ row ][ column ].runAction( cc.moveTo( proj.JewelLayer.ROTATE_DURATION , tempNode.getPosition( ) ) ) ;
 		this._gridNodes[ row + 1 ][ column + 1 ] = this._gridNodes[ row ][ column ] ;
 		this._gridNodes[ row ][ column ] = tempNode ;
 		
 		tempNode = this._gridNodes[ row ][ column + 1 ] ;
-		this._gridNodes[ row ][ column ].runAction( cc.moveTo( comp.JewelLayer.ROTATE_DURATION , tempNode.getPosition( ) ) ) ;
+		this._gridNodes[ row ][ column ].runAction( cc.moveTo( proj.JewelLayer.ROTATE_DURATION , tempNode.getPosition( ) ) ) ;
 		this._gridNodes[ row ][ column + 1 ] = this._gridNodes[ row ][ column ] ;
 		this._gridNodes[ row ][ column ] = tempNode ;
 		
-		this._gridNodes[ row ][ column ].runAction( cc.moveTo( comp.JewelLayer.ROTATE_DURATION , tempPosition ) ) ;
+		this._gridNodes[ row ][ column ].runAction( cc.moveTo( proj.JewelLayer.ROTATE_DURATION , tempPosition ) ) ;
 		
-		this.scheduleOnce( this._onMoveActionDidFinishCallback.bind( this , column ) , comp.JewelLayer.ROTATE_DURATION ) ;
+		this.scheduleOnce( this._onMoveActionDidFinishCallback.bind( this , column ) , proj.JewelLayer.ROTATE_DURATION ) ;
 	} ,
 	
 	rotateCounterClockwise : function( index )
@@ -80,23 +81,23 @@ comp.JewelLayer = comp.GridPage.extend(
 		var tempPosition	= this._gridNodes[ row ][ column ].getPosition( ) ;
 		
 		tempNode = this._gridNodes[ row ][ column + 1 ] ;
-		this._gridNodes[ row ][ column ].runAction( cc.moveTo( comp.JewelLayer.ROTATE_DURATION , tempNode.getPosition( ) ) ) ;
+		this._gridNodes[ row ][ column ].runAction( cc.moveTo( proj.JewelLayer.ROTATE_DURATION , tempNode.getPosition( ) ) ) ;
 		this._gridNodes[ row ][ column + 1 ] = this._gridNodes[ row ][ column ] ;
 		this._gridNodes[ row ][ column ] = tempNode ;
 		
 		tempNode = this._gridNodes[ row + 1 ][ column + 1 ] ;
-		this._gridNodes[ row ][ column ].runAction( cc.moveTo( comp.JewelLayer.ROTATE_DURATION , tempNode.getPosition( ) ) ) ;
+		this._gridNodes[ row ][ column ].runAction( cc.moveTo( proj.JewelLayer.ROTATE_DURATION , tempNode.getPosition( ) ) ) ;
 		this._gridNodes[ row + 1 ][ column + 1 ] = this._gridNodes[ row ][ column ] ;
 		this._gridNodes[ row ][ column ] = tempNode ;
 		
 		tempNode = this._gridNodes[ row + 1 ][ column ] ;
-		this._gridNodes[ row ][ column ].runAction( cc.moveTo( comp.JewelLayer.ROTATE_DURATION , tempNode.getPosition( ) ) ) ;
+		this._gridNodes[ row ][ column ].runAction( cc.moveTo( proj.JewelLayer.ROTATE_DURATION , tempNode.getPosition( ) ) ) ;
 		this._gridNodes[ row + 1 ][ column ] = this._gridNodes[ row ][ column ] ;
 		this._gridNodes[ row ][ column ] = tempNode ;
 		
-		this._gridNodes[ row ][ column ].runAction( cc.moveTo( comp.JewelLayer.ROTATE_DURATION , tempPosition ) ) ;
+		this._gridNodes[ row ][ column ].runAction( cc.moveTo( proj.JewelLayer.ROTATE_DURATION , tempPosition ) ) ;
 		
-		this.scheduleOnce( this._onMoveActionDidFinishCallback.bind( this , column ) , comp.JewelLayer.ROTATE_DURATION ) ;
+		this.scheduleOnce( this._onMoveActionDidFinishCallback.bind( this , column ) , proj.JewelLayer.ROTATE_DURATION ) ;
 	} ,
 	
 	_onMoveActionDidFinishCallback : function( column )
@@ -157,7 +158,7 @@ comp.JewelLayer = comp.GridPage.extend(
 	}
 } ) ;
 
-Object.defineProperty( comp.JewelLayer , "ROTATE_DURATION" ,
+Object.defineProperty( proj.JewelLayer , "ROTATE_DURATION" ,
 {
 	value		: 0.2 ,
 	enumerable	: true
