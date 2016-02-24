@@ -82,7 +82,7 @@ proj.GameOverLayer = comp.TouchBlockedLayer.extend(
 		this.getParent( ).onTryAgain( ) ;
 	} ,
 	
-	onExitTransitionDidFinish : function( )
+	onExitTransitionDidStart : function( )
 	{
 		this._super( ) ;
 	} ,

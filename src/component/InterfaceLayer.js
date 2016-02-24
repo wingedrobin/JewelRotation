@@ -42,7 +42,7 @@ comp.InterfaceLayer = comp.GridPage.extend(
 		this._super( ) ;
 	} ,
 	
-	onExitTransitionDidFinish : function( )
+	onExitTransitionDidStart : function( )
 	{
 		this._super( ) ;
 	} ,

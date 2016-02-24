@@ -236,7 +236,7 @@ comp.GridPage = cc.Layer.extend(
 		return nodes ;
 	} ,
 	
-	onExitTransitionDidFinish : function( )
+	onExitTransitionDidStart : function( )
 	{
 		this._super( ) ;
 	} ,

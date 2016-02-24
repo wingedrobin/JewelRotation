@@ -469,7 +469,7 @@ comp.Button = comp.PolymorphousNode.extend(
 		this._touchSensor.attach( ) ;
 	} ,
 	
-	onExitTransitionDidFinish : function( )
+	onExitTransitionDidStart : function( )
 	{
 		this._super( ) ;
 		

@@ -264,7 +264,7 @@ proj.MainGameScene = cc.Scene.extend(
 		this._startTime = new Date( ) ;
 	} ,
 	
-	onExitTransitionDidFinish : function( )
+	onExitTransitionDidStart : function( )
 	{
         this._super( ) ;
 	} ,

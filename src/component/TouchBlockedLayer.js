@@ -93,7 +93,7 @@ comp.TouchBlockedLayer = cc.LayerColor.extend(
 		this._touchSensor.attach( ) ;
 	} ,
 	
-	onExitTransitionDidFinish : function( )
+	onExitTransitionDidStart : function( )
 	{
 		this._super( ) ;
 		this._touchSensor.detach( ) ;
